@@ -3,7 +3,7 @@
   
 ## What is this project about?
 Eine App mit der man eine **virtuelle Schnitzeljagd** gemeinsam mit anderen erstellen kann und auch durchführen kann.  
-Jeder kann seinen erstellten Task auf der Karte platzieren und mit den GPS Koordinaten an den realen Raum gebunden -  
+Jeder kann seinen erstellten Task auf der Karte platzieren und mit den GPS Koordinaten an den realen Raum gebunden - 
 sei es Multiple-Choice Fragen, eine in Text formulierte Aufgabe fürs gesamte Team, eine Quizfrage oder sonstiges.   
 Die Aufgaben finden also im realen Raum statt. (ähnlich wie Geocaching aber anders!)
 

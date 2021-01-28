@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "...r/__vendor-dir"": expected "{", was ";"
+        on line 4 of style.scss
+
+1: ---
+2: ---
+3: //Vendor
+4: @import "vendor/__vendor-dir";
+5: //Abstracts
+6: @import "abstracts/__abstracts-dir";
+7: //Base Styles
+8: @import "base/__base-dir";
+9: //Components
+
+Backtrace:
+style.scss:4
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/lena/.rvm/gems/ruby-2.7.2/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/lena/.rvm/gems/ruby-2.7.2/bin/sass:23:in `load'
+/home/lena/.rvm/gems/ruby-2.7.2/bin/sass:23:in `<main>'
+/home/lena/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:24:in `eval'
+/home/lena/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...r/__vendor-dir\"\": expected \"{\", was \";\"\A         on line 4 of style.scss\A \A 1: ---\A 2: ---\A 3: //Vendor\A 4: @import \"vendor/__vendor-dir\";\A 5: //Abstracts\A 6: @import \"abstracts/__abstracts-dir\";\A 7: //Base Styles\A 8: @import \"base/__base-dir\";\A 9: //Components"; }

@@ -1,0 +1,31 @@
+<a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">  
+  <a href="{{ site.baseurl }}/index.html" class="logo">
+    <div class="icon"><img src="{{ site.baseurl }}/styleguide/branding/styleguide.svg"></div>
+    <div class="title">{{ site.sg_title }}</div>
+  </a>
+  <ul>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
+  </ul>
+  {% assign branding = site.docs | where: 'type', 'branding' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Branding</div>
+    <ul>{% for doc in branding %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign methodologies = site.docs | where: 'type', 'methodologies' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Methodologies</div>
+    <ul>{% for doc in methodologies %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign components = site.docs | where: 'type', 'component' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Components</div>
+    <ul>{% for doc in components %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+</div>

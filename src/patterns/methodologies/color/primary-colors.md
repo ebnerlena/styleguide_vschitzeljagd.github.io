@@ -6,16 +6,12 @@ control: exclude
 colors: 
   - name: $white
     hex: '#ffffff'
-  - name: $grey
-    hex: '#707070'
-  - name: $green
-    hex: '#8ea260'
-  - name: $brown
-    hex: '#7f6042';
-  - name: $background
-    hex: '#eeece8';
-  - name: cardBackground
-    hex: '#d8d4cc'
+    rgb: rgb(255,255,255)
+  - name: $black
+    hex: '#222222'
+    rgb: rgb(0,0,0)
+  - name: $pink
+    hex: 'hotpink' 
 ---
 <style>
 .set {
@@ -48,6 +44,7 @@ p {
     <div class="color" style="background:{{ item.hex }}"></div> 
     <p>{{ item.name }}</p>
     {% if item.hex %}<p>{{ item.hex }}</p>{% endif %}
+    {% if item.rgb %}<p>{{ item.rgb }}</p>{% endif %}
   </li>
 {% endfor %}
 </ul>

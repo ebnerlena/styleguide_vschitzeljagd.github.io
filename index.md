@@ -5,12 +5,7 @@ info: A styleguide for the SchnitzelRally app.
 nav: false
 ---
 
-<h1> Introduction </h1>
-
-My name's [Lena Ebner](https://lenaebner.com), and I built this [Jekyll-based](http://jekyllrb.com/) tool that you can use to generate and document product or system user interface (UI) patterns in a simple [Style Guide](https://jekyllstyleguide.com).
-
-https://github.com/matthewelsom/jekyll-style-guide
-https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll
+# Introduction 
 
 ## What is SchnitzelRally about?
 
@@ -26,20 +21,13 @@ The app is for everyone who likes to go wild and outside and solve challenges wi
 This styleguide is mainly for the 2 developer of the **SchnitzelRally Team** to create and offer a set of ressources and rules for development purpose.
 
 
-## Help
+## Developer
+The main developer of this styleguide and the **SchnitzelRally* project are:
+- Anna Seidl: aseidl.mmt-b2019@fh-salzburg.ac.at
+- Lena Ebner: lebner.mmt-b2019@fh-salzburg.ac.at
 
-To get started using this tool check out these useful pages: 
-- Read the [design principles]({{ site.baseurl }}/docs/about/02-design-principle.html)
-- Setup and [installation]({{ site.baseurl }}/docs/about/01-getting-started.html) info
-- Learn how to [add patterns]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-patterns), and [documentation]({{ site.baseurl }}/docs/about/01-getting-started.html#adding-documentation)
-- Understand the pattern [maturity]({{ site.baseurl }}/docs/about/03-maturity.html) scale
-- View all patterns in the [Roadmap]({{ site.baseurl }}/docs/about/04-roadmap.html)
-___
 
-**This tool was originally published in the public domain as 'Living Styleguide' on 12 September 2016 by [{{ site.sg_author }}](https://matthewelsom.com)**
-
-It's name was changed to 'Jekyll Style Guide' in 2018, and it's license was updated.
-It was last updated on {{ site.time | date: "%b %-d, %Y"  }} by {{ site.sg_author }}. 
+**This tool was originally published in the public domain as 'Living Styleguide' on 12 September 2016 by (https://matthewelsom.com)**
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
 # License 
@@ -57,5 +45,3 @@ A few parts of this project are not in the public domain:
 - jQuery `[jquery-2.1.4.min.js]` was extracted from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
 - Roboto font files in `fonts/roboto` were extracted from [Google Fonts](https://fonts.google.com/), copyright Christian Robertson.
 - Normalize `[_normalize.scss]` was extrcted from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
-
-**Please check with the respective rights holders for license details.**

@@ -1,9 +1,10 @@
 // Links
 a {
-  color: $blue;
+  color: $brown;
+  transition: all .3s ease-in;
   
   &:hover,
   &:focus {
-    color: darken($blue, 12%);
+    color: $brown;
   }
 }

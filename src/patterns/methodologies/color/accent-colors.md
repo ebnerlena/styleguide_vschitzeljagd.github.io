@@ -1,16 +1,13 @@
 ---
 title: Accent Colors
 styles: base/variables.scss
-maturity: draft
+maturity: ready
 control: exclude
 colors: 
-  - name: $blue
-    hex: '#b0cdd8'  
   - name: $green
-    hex: '##8dd861' 
-  - name: $red
-    hex: '#ec3c3c'
-    
+    hex: '#8ea260'
+  - name: $brown
+    hex: '#7f6042'    
  
 ---
 <style>

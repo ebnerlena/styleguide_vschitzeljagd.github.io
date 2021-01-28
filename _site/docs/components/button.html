@@ -2,7 +2,7 @@
  <html id="sg"  lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SchnitzelRally Style Guide</title>
+    <title>SchnitzelRally</title>
     <meta name="description" content="This Style Guide maintains design and code standards and documentation the SchnitzelRally project.">
     <meta name="keywords" content="schnitzelrally, schnitzel, wildnerness, style guide, playbook, design, code">
     <meta name="author" content="Lena Ebner">
@@ -10,24 +10,14 @@
     <link rel="icon" type="image/x-icon" href="/styleguide/branding/favicon.ico">
     <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
     <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-19247091-8', 'auto');
-      ga('send', 'pageview');
-    </script>
-    
   </head>
   <body id="sg">
     <div class="sg-pusher">
       <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
 <div class="sg_sidebar">  
   <a href="/index.html" class="logo">
-    <div class="icon"><img src="/styleguide/branding/styleguide.svg"></div>
-    <div class="title">SchnitzelRally Style Guide</div>
+    <div class="icon"><img src="/styleguide/branding/logo.png"></div>
+    <div class="title">SchnitzelRally</div>
   </a>
   <ul>
     <li><a href="/index.html">Overview</a></li>
@@ -77,22 +67,17 @@
       <div class="title header typo_ostrich">Button</div>   
       <div class="sub_title typo_crow">Use buttons to signal actions.</div>
     </div>
-    <aside id="nav">
-      <div class="header typo_hummingbird">Contents</div>
-      <ul></ul>
-    </aside>
+    
   </div>
 </header>
 <article id="documentationArea" class="sg_doc">
   <div class="sg_contain">
-    <h1 id="basic-buttons">Basic Buttons</h1>
-
-<p>A button can contain text. Although any tag can be used for a button, it will only be keyboard focusable if you use a <code class="language-plaintext highlighter-rouge">button</code> tag or you add the property <code class="language-plaintext highlighter-rouge">tabindex="0"</code>.</p>
+    <p>A button can contain text. Although any tag can be used for a button, 
+it will only be keyboard focusable if you use a <code class="language-plaintext highlighter-rouge">button</code> tag or you add the property <code class="language-plaintext highlighter-rouge">tabindex="0"</code>.</p>
 
 <section class="sg_pattern" id="default-button">
   <div class="title">
     <a class="permalink" href="#default-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Default Button</div> 
-    <div class="sg_label planned">planned</div>
   </div>
   <div class="sg_pattern_control" data-styles="components/button.scss">
     <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
@@ -104,7 +89,28 @@
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span> Default Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<section class="sg_pattern" id="active-button">
+  <div class="title">
+    <a class="permalink" href="#active-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Active Button</div> 
+  </div>
+  <div class="sg_pattern_control" data-styles="components/button.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/active_button.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/button.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_active"</span><span class="nt">&gt;</span>Active Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn_active"</span><span class="nt">&gt;</span> Active Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>
@@ -112,7 +118,6 @@
 <section class="sg_pattern" id="disabled-button">
   <div class="title">
     <a class="permalink" href="#disabled-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Disabled Button</div> 
-    <div class="sg_label planned">planned</div>
   </div>
   <div class="sg_pattern_control" data-styles="components/button.scss">
     <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
@@ -124,61 +129,36 @@
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"button button_disabled"</span><span class="nt">&gt;</span>Disabled Button<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_disabled"</span><span class="nt">&gt;</span>Disabled Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn_disabled"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span> Disabled Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>
 
 <p>A button can be disabled, pointer events will not occur.</p>
 
-<section class="sg_pattern" id="button-block">
+<section class="sg_pattern" id="button-with-icon">
   <div class="title">
-    <a class="permalink" href="#button-block"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Button Block</div> 
-    <div class="sg_label planned">planned</div>
+    <a class="permalink" href="#button-with-icon"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Button with Icon</div> 
   </div>
   <div class="sg_pattern_control" data-styles="components/button.scss">
     <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
     <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
   </div>
   <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/block_button.html" allowfullscreen=""></iframe>
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/icon_button.html" allowfullscreen=""></iframe>
   </div>
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"button button_block"</span><span class="nt">&gt;</span>Block Button<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn_icon"</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;</span>  <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>
 
-<p>A button can be made to fill its parent.</p>
+<p>A button can also include an image/icon instead of text.</p>
 
-<h1 id="advanced-buttons">Advanced Buttons</h1>
-
-<section class="sg_pattern" id="animated-button">
-  <div class="title">
-    <a class="permalink" href="#animated-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Animated Button</div> 
-    <div class="sg_label planned">planned</div>
-  </div>
-  <div class="sg_pattern_control" data-styles="components/button.scss">
-    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
-    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
-  </div>
-  <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/animated_button.html" allowfullscreen=""></iframe>
-  </div>
-  <div class="sg_code" data-styles="components/button.scss">
-<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"button button_animated alt"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-content"</span><span class="nt">&gt;</span>Checkout<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-content"</span><span class="nt">&gt;</span>Buy Now<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/a&gt;</span></code></pre></figure>
-
-  </div>
-</section>
-
-<p>A button can be animated to show hidden content. Note the button will be sized according to the visible content. Make sure there is enough room for the hidden content to show.</p>
 
   </div>
 </article>

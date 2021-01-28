@@ -2,7 +2,7 @@
  <html id="sg"  lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SchnitzelRally Style Guide</title>
+    <title>SchnitzelRally</title>
     <meta name="description" content="This Style Guide maintains design and code standards and documentation the SchnitzelRally project.">
     <meta name="keywords" content="schnitzelrally, schnitzel, wildnerness, style guide, playbook, design, code">
     <meta name="author" content="Lena Ebner">
@@ -10,24 +10,14 @@
     <link rel="icon" type="image/x-icon" href="/styleguide/branding/favicon.ico">
     <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
     <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-19247091-8', 'auto');
-      ga('send', 'pageview');
-    </script>
-    
   </head>
   <body id="sg">
     <div class="sg-pusher">
       <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
 <div class="sg_sidebar">  
   <a href="/index.html" class="logo">
-    <div class="icon"><img src="/styleguide/branding/styleguide.svg"></div>
-    <div class="title">SchnitzelRally Style Guide</div>
+    <div class="icon"><img src="/styleguide/branding/logo.png"></div>
+    <div class="title">SchnitzelRally</div>
   </a>
   <ul>
     <li><a href="/index.html">Overview</a></li>
@@ -83,50 +73,23 @@
 <article id="documentationArea" class="sg_doc">
   <div class="sg_contain">
     
-<section class="sg_pattern" id="unordered-list">
+<section class="sg_pattern" id="link">
   <div class="title">
-    <a class="permalink" href="#unordered-list"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Unordered List</div> 
-    <div class="sg_label draft">draft</div>
+    <a class="permalink" href="#link"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Link</div> 
   </div>
-  <div class="sg_pattern_control" data-styles="base/typography.scss">
+  <div class="sg_pattern_control" data-styles="Not Assigned">
     <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
     <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
   </div>
   <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/list/unordered.html" allowfullscreen=""></iframe>
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/link/link.html" allowfullscreen=""></iframe>
   </div>
-  <div class="sg_code" data-styles="base/typography.scss">
+  <div class="sg_code" data-styles="Not Assigned">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item One<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item Two<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item Three<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
-
-  </div>
-</section>
-
-<section class="sg_pattern" id="ordered-list">
-  <div class="title">
-    <a class="permalink" href="#ordered-list"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Ordered List</div> 
-    <div class="sg_label draft">draft</div>
-  </div>
-  <div class="sg_pattern_control" data-styles="base/typography.scss">
-    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
-    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
-  </div>
-  <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/list/ordered.html" allowfullscreen=""></iframe>
-  </div>
-  <div class="sg_code" data-styles="base/typography.scss">
-<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item One<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item Two<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Item Three<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>This is an example link. <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>This is an another much longer example link. <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Short link. <span class="nt">&lt;/a&gt;</span></code></pre></figure>
 
   </div>
 </section>

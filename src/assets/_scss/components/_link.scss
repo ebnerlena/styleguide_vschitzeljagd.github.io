@@ -1,0 +1,10 @@
+.link {
+    display: block;
+    font-family: $inconsolata;
+    font-size: 20px;
+    color: $brown;
+
+    &:hover {
+        font-weight:800;
+    }
+}

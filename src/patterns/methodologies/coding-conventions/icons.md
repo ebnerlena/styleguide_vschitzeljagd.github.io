@@ -1,26 +1,16 @@
 ---
 title: Icons
-maturity: draft
+maturity: ready
 control: exclude
 items: 
   - name: Favicon
-    path: src/assets/images/icon.ico
-  - name: Icon
-    path: src/assets/images/icon.svg 
-  - name: Tiny
-    path: src/assets/images/icon-16x16.png
-  - name: Mini
-    path: src/assets/images/icon-32x32.png 
+    path: src/assets/images/favicon.ico
   - name: Small
-    path: src/assets/images/icon-64x64.png
+    path: src/assets/images/logo64x64.png
   - name: Regular
-    path: src/assets/images/icon-128x128.png  
+    path: src/assets/images/logo128x128.png  
   - name: Large
-    path: src/assets/images/icon-256x256.png  
-  - name: Huge
-    path: src/assets/images/icon-512x512.png 
-  - name: Massive
-    path: src/assets/images/icon-1024x1024.png 
+    path: src/assets/images/logo256x256.png  
 ---
 <style>
 .set {

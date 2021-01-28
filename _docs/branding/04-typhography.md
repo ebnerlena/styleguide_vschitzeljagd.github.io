@@ -1,12 +1,12 @@
 ---
 title: Typography
-info: Roboto and Roboto Slab fonts have been selected as the primary fonts for this system.
+info: Inconsolata and Roboto fonts have been selected as the fonts for this project.
 ---
 
 {% include pattern_block.html url='/src/patterns/methodologies/typography/roboto.html' %}
 
 
-{% include pattern_block.html url='/src/patterns/methodologies/typography/roboto-slab.html' %}
+{% include pattern_block.html url='/src/patterns/methodologies/typography/inconsolata.html' %}
 
 ---
 
@@ -18,4 +18,4 @@ A `sans-serif` fallback font is used incase [@font-face](https://www.w3schools.c
 
 ## Copryright 
 
-Roboto and Roboto Slab are free software. For more details, please visit Google Fonts official website at [https://fonts.google.com/](https://fonts.google.com/)
+Roboto and Inconsolata are free software. For more details, please visit Google Fonts official website at [https://fonts.google.com/](https://fonts.google.com/)

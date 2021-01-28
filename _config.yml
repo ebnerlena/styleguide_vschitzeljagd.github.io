@@ -22,7 +22,7 @@ destination: _site          ## Output folder
 ## Style Guide Shell Settings
 
 ## These settings are used in when generating the style guide shell
-sg_title: SchnitzelRally Style Guide
+sg_title: SchnitzelRally
 sg_version: 1.0
 sg_keywords: schnitzelrally, schnitzel, wildnerness, style guide, playbook, design, code
 sg_author: Lena Ebner
@@ -79,7 +79,7 @@ defaults:
     values:
       layout: pattern
       type: pattern
-      maturity: planned
+      maturity: ready
       title: Not Assigned
       styles: Not Assigned
      
@@ -95,7 +95,7 @@ pattern_favicon: /src/assets/images/icon.ico
 pattern_styles:                 ## add style locations here
   - /src/assets/css/style.css
 pattern_scripts:                ## add script locations here
-  - /src/assets/js/libs/jquery-2.1.4.min.js  
+  # - /src/assets/js/libs/jquery-2.1.4.min.js  
 
 
 ## Generates Pattern Styles

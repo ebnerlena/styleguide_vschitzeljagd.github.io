@@ -7,8 +7,12 @@ We are using Sass CSS preprocessor to convert SCSS into CSS.
 
 <a href="https://sass-lang.com/"> Have a look here </a>
 
+scss example with identierung und nesting und mixins
+
 ## 7-1 Pattern
 We use a 7-1 architecture as recommended by the Sass Guidelines and import all files into the main.scss.
+
+link missing
 
 - sass/
     - _abstracts/

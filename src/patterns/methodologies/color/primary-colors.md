@@ -12,8 +12,6 @@ colors:
     hex: '#eeece8'
   - name: $backgroundColor2
     hex: '#d8d4cc'
-  - name: $white
-    hex: '#FFFFFF'
 ---
 <style>
 .set {

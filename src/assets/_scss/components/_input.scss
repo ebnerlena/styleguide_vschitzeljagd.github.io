@@ -8,12 +8,12 @@
         border-radius: 12px;
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
-        border: 2px $grey solid;
+        border: 2px $secondaryColor solid;
         transition: all .3s ease;
         padding: 5px 10px;
         outline: none;
         max-width: 30em;
-        color: $grey;
+        color: $secondaryColor;
     }
 
     &-label {
@@ -26,7 +26,7 @@
     &-text {
 
         &:hover, &:focus {
-            box-shadow: 0 0 5px $grey;
+            box-shadow: 0 0 5px $secondaryColor;
         }
 
     }
@@ -36,7 +36,7 @@
 
     &-select {
         &:hover, &:focus {
-            box-shadow: 0 0 5px $grey;
+            box-shadow: 0 0 5px $secondaryColor;
         }
     }
 }
@@ -53,7 +53,7 @@ input[type=range]{
 input[type=range]::-webkit-slider-runnable-track {
     width: 15rem;
     height: 7px;
-    background: $cardBackground;
+    background: $backgroundColor2;
     border: none;
     border-radius: 3px;
 }
@@ -64,7 +64,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: $brown;
+    background: $accentColor;
     margin-top: -6px;
     transition: all .3s ease;
 }
@@ -74,13 +74,13 @@ input[type=range]:focus {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: $cardBackground;
+    background: $backgroundColor2;
 }
 
 input[type=range]::-moz-range-track {
     width: 300px;
     height: 5px;
-    background: $cardBackground;
+    background: $backgroundColor2;
     border: none;
     border-radius: 3px;
 }
@@ -90,7 +90,7 @@ input[type=range]::-moz-range-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: $brown;
+    background: $accentColor;
 }
 
 /*hide the outline behind the border*/
@@ -100,5 +100,5 @@ input[type=range]:-moz-focusring {
 }
 
 input[type=range]:focus::-moz-range-track {
-    background: $cardBackground;
+    background: $backgroundColor2;
 }

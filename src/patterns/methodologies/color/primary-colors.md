@@ -4,14 +4,16 @@ styles: base/variables.scss
 maturity: ready
 control: exclude
 colors: 
-  - name: $white
-    hex: '#ffffff'
-  - name: $grey
+  - name: $primaryColor
+    hex: '#8ea260'
+  - name: $secondaryColor
     hex: '#707070'
-  - name: $background
+  - name: $backgroundColor
     hex: '#eeece8'
-  - name: $cardBackground
+  - name: $backgroundColor2
     hex: '#d8d4cc'
+  - name: $white
+    hex: '#FFFFFF'
 ---
 <style>
 .set {

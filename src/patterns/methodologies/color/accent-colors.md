@@ -4,10 +4,12 @@ styles: base/variables.scss
 maturity: ready
 control: exclude
 colors: 
-  - name: $green
-    hex: '#8ea260'
-  - name: $brown
-    hex: '#7f6042'    
+  - name: $accentColor
+    hex: '#e49871'
+  - name: $basicTextColor
+    hex: '#707070'
+  - name: $white
+    hex: '#FFFFFF'    
  
 ---
 <style>

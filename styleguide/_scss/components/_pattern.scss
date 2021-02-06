@@ -16,16 +16,16 @@
     margin: 0 $margin_small 0 0;
     align-self: center;
     margin-right: auto;
-    color: $smoke;
+    color: $secondaryColor;
     transition: all $base-duration $base-timing;
   }
   .button {
     padding: 0 $margin_small;
-    color: $smoke;
+    color: $secondaryColor;
     transition: all $base-duration $base-timing;
     
     &:hover {
-      color: $blue !important;
+      color: $accentColor !important;
     }
     
     .icon {
@@ -65,7 +65,7 @@
       }
       
       &:hover {
-        color: $blue;
+        color: $secondaryColor;
       }
     }
     .header {

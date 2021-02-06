@@ -9,7 +9,7 @@ body#sg {
   font-size: $base-font-size;
   font-family: $base-font-family;
   line-height: $base-line-height;
-  background: $white;
+  background: $backgroundColor;
 }
 
 body#sg {
@@ -131,4 +131,8 @@ body#sg {
   @media only screen and (max-width: $large_screen) {
     padding: 0;  
   }
+}
+
+footer {
+  height: 100px;
 }

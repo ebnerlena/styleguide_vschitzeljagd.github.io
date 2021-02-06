@@ -1,10 +1,10 @@
 // Links
 a {
-  color: $brown;
+  color: $accentColor;
   transition: all .3s ease-in;
   
   &:hover,
   &:focus {
-    color: $brown;
+    color: $primaryColor;
   }
 }

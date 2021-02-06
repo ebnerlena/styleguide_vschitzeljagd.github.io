@@ -39,31 +39,48 @@ $micro-font-size: 70%;
 $small-font-size: 80%;
 
 // Brand Colors
-$white: #fff;
 $smoke: whitesmoke;
 $black: #000;
 $red: orangered;
 $blue: dodgerblue;
 $green: #16b491;
 $amber: orange;
-$grey: lightgrey;
+
+// Primary Colors
+$white: #ffffff;
+$black: #222222;
+$pink: hotpink;
+$brown: #7f6042;
+$grey: #707070;
+$background: #eeece8;
+$cardBackground: #d8d4cc;
+
+// Accent Colors
+$blue: #b0cdd8;
+$primaryColor: #8ea260;
+$secondaryColor: #707070;
+
+$backgroundColor: #eeece8;
+$backgroundColor2: #d8d4cc;
+
+$accentColor: #e49871;
 
 // Animations
 $base-duration: .2s;
 $base-timing: ease;
 
 // Base Colors
-$base-font-color: #515151;
-$heading-font-color: #0a0a0a;
-$subheading-font-color: $grey;
+$base-font-color: $black;
+$heading-font-color: $black;
+$subheading-font-color: $black;
 
 // Code Color
-$code-color: #6e6e6e;
+$code-color: rgb(66, 66, 66);
 $code-font-color: #ffffff;
 
 // Borders
 $base-border-radius: 1rem;
-$base-border: 1px solid $smoke;
+$base-border: 1px solid $secondaryColor;
 
 // Margins
 $margin: 1rem;

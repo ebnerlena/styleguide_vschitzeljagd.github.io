@@ -9,10 +9,9 @@ nav: false
 
 ## What is SchnitzelRally about?
 
-**Schnitzelrally** is an app with which you can create and plan a __scavenger hunt alias Schnitzeljagd__ together with others online and then carry it out in the real wilderness.   
+[**SchnitzelRally**](https://schnitzelrally.projects.multimediatechnology.at/) is an app with which you can create and plan a __scavenger hunt alias Schnitzeljagd__ together with others online and then carry it out in the real wilderness.   
 Everyone who participates in the same route can create tasks and place them on the map and so link them to the real space with GPS coordinates.   
-Tasks can be multiple-choice questions, a task formulated in text for the whole team, a quiz question or photo upload.   
-__Similar to geocaching but wilder!__
+Tasks can be multiple-choice questions, a task formulated in text for the whole team, a quiz question or photo upload. __Similar to geocaching but wilder!__
 
 ## Target Group
 
@@ -22,15 +21,16 @@ This styleguide is mainly for the 2 developer of the **SchnitzelRally Team** to 
 
 
 ## Developer
-The main developer of this styleguide and the **SchnitzelRally* project are:
+The main developer of this styleguide and the **SchnitzelRally** project are:
 - Anna Seidl: aseidl.mmt-b2019@fh-salzburg.ac.at
 - Lena Ebner: lebner.mmt-b2019@fh-salzburg.ac.at
 
 
+# License 
+
 **This tool was originally published in the public domain as 'Living Styleguide' on 12 September 2016 by (https://matthewelsom.com)**
 Copyright © 2016 - 2018 & Beyond. All Rights Reserved. 
 
-# License 
 This tool is free for everyone to use, and modify, but don't try and sell it.
 Available under [Apache license version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 

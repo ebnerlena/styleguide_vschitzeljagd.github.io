@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+ <html id="sg"  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SchnitzelRally</title>
+    <meta name="description" content="This Style Guide maintains design and code standards and documentation the SchnitzelRally project.">
+    <meta name="keywords" content="schnitzelrally, schnitzel, wildnerness, style guide, playbook, design, code">
+    <meta name="author" content="Lena Ebner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/styleguide/branding/favicon.ico">
+    <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
+    <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">  
+  <a href="/index.html" class="logo">
+    <div class="icon"><img src="/styleguide/branding/logo.png"></div>
+    <div class="title">SchnitzelRally</div>
+  </a>
+  <ul>
+    <li><a href="/index.html">Overview</a></li>
+  </ul>
+  
+  <div class="group">
+    <div class="group_title">Branding</div>
+    <ul>
+      <li><a href="/docs/branding/01-intro.html">Intro</a></li>
+    
+      <li><a href="/docs/branding/02-colors.html">Colors</a></li>
+    
+      <li><a href="/docs/branding/03-logo.html">Logo</a></li>
+    
+      <li><a href="/docs/branding/04-typhography.html">Typography</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Methodologies</div>
+    <ul>
+      <li><a href="/docs/methodologies/coding-conventions.html">Coding Conventions</a></li>
+    
+      <li><a href="/docs/methodologies/naming-conventions.html">Naming Conventions</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Components</div>
+    <ul>
+      <li><a href="/docs/components/button.html">Button</a></li>
+    
+      <li><a href="/docs/components/heading.html">Heading</a></li>
+    
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
+    
+      <li><a href="/docs/components/link.html">Link</a></li>
+    
+      <li><a href="/docs/components/list.html">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html" class="active">Navigation</a></li>
+    
+      <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
+    </ul>
+  </div>
+</div>
+      <main class="sg-main">
+        <header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">Navigation</div>   
+      <div class="sub_title typo_crow">We use a topbar navigation.</div>
+    </div>
+    
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    <p>Navigation is used to bundle all basic actions of the app to one point. It should be clearly visible to the user on every page and some actions should also be familiar to them, e.g. click on logo to navigate to the home screen.</p>
+
+<section class="sg_pattern" id="normal-navigation">
+  <div class="title">
+    <a class="permalink" href="#normal-navigation"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Normal Navigation</div> 
+  </div>
+  <div class="sg_pattern_control" data-styles="components/navigation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/navigation/nav.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/navigation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav_header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"nav_header_title"</span><span class="nt">&gt;</span> Route: Route1234 <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar_trigger"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This is what the normal navigation looks like.</p>
+
+<section class="sg_pattern" id="home-navigation">
+  <div class="title">
+    <a class="permalink" href="#home-navigation"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Home Navigation</div> 
+  </div>
+  <div class="sg_pattern_control" data-styles="components/navigation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/navigation/nav_home.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/navigation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav_header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_left"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"logo_link"</span> <span class="na">alt=</span><span class="s">"Logo"</span> <span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/logo256x256.png"</span> <span class="na">alt=</span><span class="s">"SchnitzelRally Logo"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Login<span class="nt">&lt;/a&gt;</span> 
+            <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span> <span class="na">viewBox=</span><span class="s">"0 0 30 30"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">"Icon_awesome-user-alt"</span> <span class="na">data-name=</span><span class="s">"Icon awesome-user-alt"</span> <span class="na">d=</span><span class="s">"M15,16.875A8.438,8.438,0,1,0,6.563,8.438,8.44,8.44,0,0,0,15,16.875Zm7.5,1.875H19.271a10.2,10.2,0,0,1-8.543,0H7.5A7.5,7.5,0,0,0,0,26.25v.938A2.813,2.813,0,0,0,2.813,30H27.188A2.813,2.813,0,0,0,30,27.188V26.25A7.5,7.5,0,0,0,22.5,18.75Z"</span> <span class="na">fill=</span><span class="s">"#fff"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/svg&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar_trigger sidebar_trigger__hidden"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This navigation is used on the start screen, where also our logo is placed as back-link.</p>
+
+<section class="sg_pattern" id="navigation-with-back-arrow">
+  <div class="title">
+    <a class="permalink" href="#navigation-with-back-arrow"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Navigation with Back Arrow</div> 
+  </div>
+  <div class="sg_pattern_control" data-styles="components/navigation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/navigation/nav_back.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/navigation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav_header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_left"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"back-arrow_link"</span> <span class="na">alt=</span><span class="s">"Logo"</span> <span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">width=</span><span class="s">"18.914"</span> <span class="na">height=</span><span class="s">"35.828"</span> <span class="na">viewBox=</span><span class="s">"0 0 18.914 35.828"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">"chevron-left"</span> <span class="na">d=</span><span class="s">"M25.5,39,9,22.5,25.5,6"</span> <span class="na">transform=</span><span class="s">"translate(-8 -4.586)"</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">stroke=</span><span class="s">"#fff"</span> <span class="na">stroke-linecap=</span><span class="s">"round"</span> <span class="na">stroke-linejoin=</span><span class="s">"round"</span> <span class="na">stroke-width=</span><span class="s">"2.5"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"nav_header_title"</span><span class="nt">&gt;</span> Edit Player <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav_header_right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar_trigger"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>In this navigation the user is able to go back to the page where he came from.</p>
+
+  </div>
+</article>
+      </main>
+    </div>
+    <footer> </footer>
+<script src="/styleguide/js/main.js"></script>
+<script src="/styleguide/js/libs/iframeResizer.min.js"></script>
+<script src="/styleguide/js/resize.js"></script>
+
+  </body>
+</html>

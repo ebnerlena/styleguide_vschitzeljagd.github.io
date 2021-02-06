@@ -10,11 +10,11 @@ $inconsolata: 'Inconsolata';
 
 
 // Font Size
-$typo_lion: 2.6rem;
-$typo_panther: 1.8rem;
-$typo_leopard: 1.3rem; 
+$typo_lion: 2rem;
+$typo_panther: 1.52rem;
+$typo_leopard: 1.17rem; 
 $typo_cat: 1rem; 
-$typo_kitten: .8rem;
+$typo_kitten: .83rem;
 
 // Primary Colors
 $white: #ffffff;
@@ -49,3 +49,9 @@ $headline-font-color: $grey;
 $large-pad: 1.5rem;
 $base-pad: 1rem;
 $small-pad: $large-pad / 2; //0.75rem
+
+$default_margin: 1rem;
+
+//padding
+$default_padding: 1rem;
+$borderradius: 12px;

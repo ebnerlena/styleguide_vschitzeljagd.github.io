@@ -6,8 +6,6 @@ control: exclude
 colors: 
   - name: $accentColor
     hex: '#e49871'
-  - name: $basicTextColor
-    hex: '#707070'
   - name: $white
     hex: '#FFFFFF'    
  

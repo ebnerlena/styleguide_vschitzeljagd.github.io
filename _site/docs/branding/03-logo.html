@@ -52,11 +52,13 @@
     
       <li><a href="/docs/components/heading.html">Heading</a></li>
     
-      <li><a href="/docs/components/input.html">Input</a></li>
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
     
       <li><a href="/docs/components/link.html">Link</a></li>
     
       <li><a href="/docs/components/list.html">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html">Navigation</a></li>
     
       <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
     </ul>
@@ -89,7 +91,7 @@
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
-<span class="nc">.set</span> <span class="p">{</span>
+<span class="nc">.set</span> <span class="p">{</span> 
   <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
   <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
   <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-1rem</span><span class="p">;</span>
@@ -125,7 +127,6 @@
   <span class="nt">&lt;li&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/{{ item.path }}"</span><span class="nt">/&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>{{ item.name }}<span class="nt">&lt;/p&gt;</span>
-    {% if item.path %}<span class="nt">&lt;p&gt;</span>{{ item.path }}<span class="nt">&lt;/p&gt;</span>{% endif %}
   <span class="nt">&lt;/li&gt;</span>
 {% endfor %}
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>

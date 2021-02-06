@@ -18,6 +18,8 @@ control: exclude
   }
 </style>
 
+Roboto is used for everything else than headings e.g. paragraphs, input fields, buttons ...
+
 # AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 # 1234567890',.<>/?;':"[]{}-=_+!@#$%^&*()
 

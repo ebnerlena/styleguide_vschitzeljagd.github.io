@@ -18,6 +18,9 @@ control: exclude
   }
 </style>
 
+Inconsolata is the font that is used for headings and the intro on the start page to make an eye catching effect.
+
+
 # AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 # 1234567890',.<>/?;':"[]{}-=_+!@#$%^&*()
 

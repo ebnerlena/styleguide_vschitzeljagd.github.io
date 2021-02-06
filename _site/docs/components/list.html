@@ -52,11 +52,13 @@
     
       <li><a href="/docs/components/heading.html">Heading</a></li>
     
-      <li><a href="/docs/components/input.html">Input</a></li>
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
     
       <li><a href="/docs/components/link.html">Link</a></li>
     
       <li><a href="/docs/components/list.html" class="active">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html">Navigation</a></li>
     
       <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
     </ul>
@@ -74,7 +76,8 @@
 </header>
 <article id="documentationArea" class="sg_doc">
   <div class="sg_contain">
-    
+    <p>Lists are used to order some elements. They are also useful to group some elements. You are able to represent data in an (un)ordered way. Depending on what you want to show, one or the other is more likely to be used.</p>
+
 <section class="sg_pattern" id="unordered-list">
   <div class="title">
     <a class="permalink" href="#unordered-list"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Unordered List</div> 
@@ -97,6 +100,8 @@
 
   </div>
 </section>
+
+<p>An unordered list is used to list elements in an unordered way.</p>
 
 <section class="sg_pattern" id="ordered-list">
   <div class="title">
@@ -121,6 +126,64 @@
   </div>
 </section>
 
+<p>An ordered list is used to list elements in an ordered way.</p>
+
+<section class="sg_pattern" id="complex-list">
+  <div class="title">
+    <a class="permalink" href="#complex-list"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Complex List</div> 
+  </div>
+  <div class="sg_pattern_control" data-styles="components/list.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/list/complex.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/list.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-task"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-name"</span><span class="nt">&gt;&lt;strong&gt;</span>Task 1<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-links"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;</span> | <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Destroy<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-description"</span><span class="nt">&gt;</span>Here is the description of task 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-task"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-name"</span><span class="nt">&gt;&lt;strong&gt;</span>Task 2<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-links"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;</span> | <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Destroy<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-description"</span><span class="nt">&gt;</span>Here is the description of task 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-task"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-name"</span><span class="nt">&gt;&lt;strong&gt;</span>Task 3<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"task-links"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;</span> | <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link"</span><span class="nt">&gt;</span>Destroy<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"task-description"</span><span class="nt">&gt;</span>Here is the description of task 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This complex list is used to group task elements with further information. They are also listed in an unordered way.</p>
 
   </div>
 </article>

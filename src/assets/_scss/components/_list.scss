@@ -1,0 +1,33 @@
+.card {
+    padding: 0;
+
+    &-task {
+        margin: 3% 0;
+        padding: $default_padding;
+        background: $white;
+        border-radius: $borderradius;
+        min-height: 6.5vh;
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+
+            .link {
+                display: unset;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .divider {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

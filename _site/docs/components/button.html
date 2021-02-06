@@ -52,11 +52,13 @@
     
       <li><a href="/docs/components/heading.html">Heading</a></li>
     
-      <li><a href="/docs/components/input.html">Input</a></li>
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
     
       <li><a href="/docs/components/link.html">Link</a></li>
     
       <li><a href="/docs/components/list.html">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html">Navigation</a></li>
     
       <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
     </ul>
@@ -74,8 +76,9 @@
 </header>
 <article id="documentationArea" class="sg_doc">
   <div class="sg_contain">
-    <p>A button can contain text. Although any tag can be used for a button, 
-it will only be keyboard focusable if you use a <code class="language-plaintext highlighter-rouge">button</code> tag or you add the property <code class="language-plaintext highlighter-rouge">tabindex="0"</code>.</p>
+    <p>Buttons are used to signal actions e.g. create a new game task.<br />
+Normally buttons contain text, but also at some places an white icon inside might be wanted.
+In HTML we can use the button or link tag, although any other tag can be used, when giving him the .btn class.</p>
 
 <section class="sg_pattern" id="default-button">
   <div class="title">
@@ -97,6 +100,8 @@ it will only be keyboard focusable if you use a <code class="language-plaintext 
   </div>
 </section>
 
+<p>A normal, clickable button gets bigger when you hover it.</p>
+
 <section class="sg_pattern" id="active-button">
   <div class="title">
     <a class="permalink" href="#active-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Active Button</div> 
@@ -111,11 +116,13 @@ it will only be keyboard focusable if you use a <code class="language-plaintext 
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_active"</span><span class="nt">&gt;</span>Active Button<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn_active"</span><span class="nt">&gt;</span> Active Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn--active"</span><span class="nt">&gt;</span>Active Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn--active"</span><span class="nt">&gt;</span> Active Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>
+
+<p>An active button does not display the text anymore and pointer events will not occur any longer.</p>
 
 <section class="sg_pattern" id="disabled-button">
   <div class="title">
@@ -131,13 +138,13 @@ it will only be keyboard focusable if you use a <code class="language-plaintext 
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_disabled"</span><span class="nt">&gt;</span>Disabled Button<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn_disabled"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span> Disabled Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn--disabled"</span><span class="nt">&gt;</span>Disabled Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn--disabled"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">disabled</span><span class="nt">&gt;</span> Disabled Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>
 
-<p>A button can be disabled, pointer events will not occur.</p>
+<p>A button can be disabled, pointer events will not occur. No interaction is possible.</p>
 
 <section class="sg_pattern" id="button-with-icon">
   <div class="title">
@@ -153,8 +160,8 @@ it will only be keyboard focusable if you use a <code class="language-plaintext 
   <div class="sg_code" data-styles="components/button.scss">
 <!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn_icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn_icon"</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;</span>  <span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn__icon"</span><span class="nt">&gt;&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn__icon"</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"icon"</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/plus.svg"</span> <span class="na">alt=</span><span class="s">"btn-icon"</span> <span class="nt">/&gt;</span>  <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   </div>
 </section>

@@ -13,7 +13,7 @@ items:
     path: src/assets/images/logo256x256.png  
 ---
 <style>
-.set {
+.set { 
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
@@ -49,7 +49,6 @@ p {
   <li>
     <div class="image"><img src="{{ site.baseurl }}/{{ item.path }}"/></div>
     <p class="header">{{ item.name }}</p>
-    {% if item.path %}<p>{{ item.path }}</p>{% endif %}
   </li>
 {% endfor %}
 </ul>

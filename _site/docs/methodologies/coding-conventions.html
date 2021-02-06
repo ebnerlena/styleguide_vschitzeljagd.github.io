@@ -52,11 +52,13 @@
     
       <li><a href="/docs/components/heading.html">Heading</a></li>
     
-      <li><a href="/docs/components/input.html">Input</a></li>
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
     
       <li><a href="/docs/components/link.html">Link</a></li>
     
       <li><a href="/docs/components/list.html">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html">Navigation</a></li>
     
       <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
     </ul>
@@ -77,14 +79,53 @@
     <h2 id="pre-processors">Pre Processors</h2>
 <p>We are using Sass CSS preprocessor to convert SCSS into CSS.</p>
 
-<p><a href="https://sass-lang.com/"> Have a look here </a></p>
+<p>See the documentation here: <a href="https://sass-lang.com/"> https://sass-lang.com/ </a></p>
 
-<p>scss example with identierung und nesting und mixins</p>
+<p>An typical SCSS Syntax example with identications and mixins for DRY would be as following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Variable declaration in scss/_abstracts/_variables
+$white: #ffffff;
+
+// Mixins in scss/_abstracts/
+@mixin mobile {
+    @media (max-width: 450px) {
+      @content;
+    }
+}
+
+// Navigation in scss/_components/
+.nav {
+    background-color: $primaryColor;
+    color: $white;
+    height: 70px;
+    display: flex;
+    z-index: 5;
+    position: fixed;
+    padding: 0 20px;
+
+    @include mobile {
+        padding-left: ($default_padding)/2;
+        height: 65px;
+    }
+
+    .nav__header {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+}
+</code></pre></div></div>
 
 <h2 id="7-1-pattern">7-1 Pattern</h2>
-<p>We use a 7-1 architecture as recommended by the Sass Guidelines and import all files into the main.scss.</p>
+<p>We use a 7-1 architecture as recommended by the Sass Guidelines and import all files into the main.scss.
+Another reason we use this pattern is, that it is very clearly structured. So you are able to find the file you are looking for quickly.</p>
 
-<p>link missing</p>
+<p>Find the description here <a href="https://sass-guidelin.es/de/">https://sass-guidelin.es/de/ </a></p>
 
 <ul>
   <li>sass/
@@ -139,22 +180,52 @@
 </ul>
 
 <h2 id="units">Units</h2>
-<p>We use REM as default unit so that we always refer to the root element.</p>
+<p>We use REM as default unit. We do so to make sure that we always refer to the root element.</p>
 
 <h2 id="css-normalize">CSS Normalize</h2>
-<p>We use CSS Normalize to provide cross browser consistency in the feault styling of HTMl elements.</p>
+<p>Furthermore we use CSS Normalize to provide cross browser consistency in the default styling of HTMl elements.</p>
 
 <p>Normalize <code class="language-plaintext highlighter-rouge">[_normalize.scss]</code> was extracted from <a href="https://github.com/necolas/normalize.css">Normalize.css</a>, copyright Nicolas Gallagher and Jonathan Neal.</p>
 
 <h2 id="spacings">Spacings</h2>
-<p>We try to use default margins, paddings and border-radius for our components defined as .</p>
+<p>We also use default margins, paddings and border-radius for our components. We user this to make sure, that there is equal spacing everywhere.</p>
+
+<p>They are defined as the following:</p>
 
 <ul>
-  <li>$default-margin:</li>
-  <li>$default-padding:</li>
-  <li>$default-borderradius:</li>
+  <li>$default_margin: 1rem;</li>
+  <li>$default_padding: 1rem;</li>
+  <li>$borderradius: 12px;</li>
 </ul>
 
+<h2 id="breakpoints">Breakpoints</h2>
+
+<p>As our goal is to provide a responsive design we use the following breakpoints defined as mixins:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// mixins in scss/_abstract/mixins.scss
+
+  @mixin desktop {
+    @media (min-width: 1100px) {
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media (min-width: 450px) and (max-width: 1100px){
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+  
+  @mixin maxwidthcontainer {
+    max-width: 35rem;
+  }
+</code></pre></div></div>
 
   </div>
 </article>

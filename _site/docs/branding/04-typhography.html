@@ -52,11 +52,13 @@
     
       <li><a href="/docs/components/heading.html">Heading</a></li>
     
-      <li><a href="/docs/components/input.html">Input</a></li>
+      <li><a href="/docs/components/input.html">Input Elements</a></li>
     
       <li><a href="/docs/components/link.html">Link</a></li>
     
       <li><a href="/docs/components/list.html">List</a></li>
+    
+      <li><a href="/docs/components/navigation.html">Navigation</a></li>
     
       <li><a href="/docs/components/paragraph.html">Paragraph</a></li>
     </ul>
@@ -67,7 +69,7 @@
   <div class="sg_contain">
     <div class="head">
       <div class="title header typo_ostrich">Typography</div>   
-      <div class="sub_title typo_crow">Inconsolata and Roboto fonts have been selected as the fonts for this project.</div>
+      <div class="sub_title typo_crow">Inconsolata and Roboto have been selected as the fonts for this project.</div>
     </div>
     
   </div>
@@ -75,39 +77,6 @@
 <article id="documentationArea" class="sg_doc">
   <div class="sg_contain">
     
-<section class="sg_pattern" id="roboto">
-  <div class="title">
-    <a class="permalink" href="#roboto"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Roboto</div> 
-  </div>
-  
-  <div class="sg_viewport">
-    <iframe frameborder="0" scrolling="no" src="/src/patterns/methodologies/typography/roboto.html" allowfullscreen=""></iframe>
-  </div>
-  <div class="sg_code" data-styles="abstracts/fonts.scss">
-<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
-  <span class="o">*</span> <span class="p">{</span>
-    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span> <span class="cp">!important</span><span class="p">;</span>
-    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="nt">p</span> <span class="p">{</span>
-    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
-    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span> <span class="cp">!important</span><span class="p">;</span>
-    
-  <span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span>
-
-# AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
-# 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
-
-Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
-
-  </div>
-</section>
-
 <section class="sg_pattern" id="inconsolata">
   <div class="title">
     <a class="permalink" href="#inconsolata"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Inconsolata</div> 
@@ -133,6 +102,44 @@ Apparently we had reached a great height in the atmosphere, for the sky was a de
   <span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
+Inconsolata is the font that is used for headings and the intro on the start page to make an eye catching effect.
+
+
+# AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+# 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<section class="sg_pattern" id="roboto">
+  <div class="title">
+    <a class="permalink" href="#roboto"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Roboto</div> 
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/methodologies/typography/roboto.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span> <span class="cp">!important</span><span class="p">;</span>
+    
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+Roboto is used for everything else than headings e.g. paragraphs, input fields, buttons ...
+
 # AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 # 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
 
@@ -149,7 +156,7 @@ Apparently we had reached a great height in the atmosphere, for the sky was a de
 
 <hr />
 
-<h2 id="copryright">Copryright</h2>
+<h2 id="copyright">Copyright</h2>
 
 <p>Roboto and Inconsolata are free software. For more details, please visit Google Fonts official website at <a href="https://fonts.google.com/">https://fonts.google.com/</a></p>
 

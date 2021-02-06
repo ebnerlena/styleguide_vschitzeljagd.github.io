@@ -20,24 +20,25 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  &:hover:not(.btn_active),
+  &:hover:not(.btn--active),
   &:focus {
     transform: scale(1.05);
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
   }
 }
 
-.btn_active, .btn:active {
+.btn--active, .btn:active {
   color: transparent;
+  pointer-events: none;
   transform: scale(0.98);
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.btn_disabled, .btn:disabled {
+.btn--disabled, .btn:disabled {
   pointer-events: none;
   background: $backgroundColor2;
 }
 
-.btn_icon {
+.btn__icon {
   min-width: 0;
 }
